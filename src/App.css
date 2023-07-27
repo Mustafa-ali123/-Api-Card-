@@ -1,0 +1,91 @@
+body {
+  /* background-color:#0e1538; */
+  background-color: #181818;
+}
+.main h4{
+  position: relative;
+  cursor: pointer;
+}
+.main h4::after{
+  content:"";
+  margin-left: 12px;
+  width:0%;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #009688;
+  transition: 0.5s;
+
+}
+.main h4:hover::after {
+  width: 90%;
+  cursor: pointer;
+}
+
+.butt {
+  color: #fff;
+  background: transparent !important;
+  font-weight: bold;
+  width: 22vh;
+  border-radius: 25px;
+  border: 1px solid #009688;
+  height: 5vh;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.span {
+  width: 0%;
+  height: 100%;
+  border-radius: 25px;
+  background: #009688;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.8s
+}
+
+.butt:hover .span {
+  width: 100%;
+}
+.butt:hover{
+  color: aliceblue;
+  border: none;
+}
+.head {
+  color: aliceblue;
+}
+
+.card {
+  color: aliceblue;
+  background-image: linear-gradient(#495057, #0a0908);
+  box-shadow: 16px 14px 20px #0000088c;
+  width: 38vh;
+  height: 52vh;
+}
+
+/* .parent::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 200px;
+  height: 70vh;
+  background-image: linear-gradient(#00ccff,#d400d4);
+  animation: animate 4s linear infinite ;
+
+}
+@keyframes animate{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+} */
+
+
+
+@media (max-width: 576px) {}
